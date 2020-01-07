@@ -47,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myapplication/ui/login/LoginActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="82">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-end-line="26" />
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -364,7 +364,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myapplication/ui/login/LoginActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-end-line="26" />
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
