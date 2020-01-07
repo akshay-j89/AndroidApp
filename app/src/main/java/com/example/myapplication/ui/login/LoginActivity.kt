@@ -23,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+// test
         setContentView(R.layout.activity_login)
 
         val username = findViewById<EditText>(R.id.username)
