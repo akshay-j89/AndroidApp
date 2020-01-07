@@ -22,6 +22,7 @@ platform :android do
 deploygate(
   api_token: '617d2893a897d843836c93c760cfd3c27cd0c6fc',
   user: 'Indrapatel',
+  apk: "app/build/outputs/apk/debug/app-debug.apk",
   message: 'Akshay Android Continues integration Build',
 )
 
