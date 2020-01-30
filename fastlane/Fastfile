@@ -16,11 +16,12 @@
 default_platform(:android)
 
 platform :android do
-  lane :CD do |values|
-
- def increment_version_code(gradle_build: '/Users/akshay-goqii/Documents/Dev/AndroidProject/gitProject/app/build.gradle')
+def increment_version_code(gradle_build: '/Users/akshay-goqii/Documents/Dev/AndroidProject/gitProject/app/build.gradle')
     sh %Q{cd ../ && echo "$(awk '{sub(/versionCode [[:digit:]]+$/,"versionCode "$2+1)}1' #{gradle_build})" > #{gradle_build} && cd -}
- 
+
+lane :CD do |values|
+
+increment_version_code gradle_build: '/Users/akshay-goqii/Documents/Dev/AndroidProject/gitProject/app/build.gradle'
 
 
 deploygate(
