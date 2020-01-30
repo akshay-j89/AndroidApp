@@ -18,6 +18,22 @@ default_platform(:android)
 platform :android do
   lane :CD do |values|
 
+    # Get the last version code and increment it.
+    versionCode = File.read("metadata/versionCode").to_i
+    versionCode = versionCode+1
+
+    f = File.new("metadata/versionCode", "w")
+    f.write(versionCode)
+    f.close
+
+ # Build the release version of the Android App
+    gradle(
+      task: "assemble",
+      build_type: "debug",
+      project_dir: "/Users/akshay-goqii/Documents/Dev/AndroidProject/gitProject ",
+      properties: { 'versionCode' => versionCode }
+    )
+
 
 deploygate(
   api_token: '617d2893a897d843836c93c760cfd3c27cd0c6fc',
